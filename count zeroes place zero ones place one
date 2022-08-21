@@ -1,0 +1,27 @@
+n=input()
+
+def func(n):
+    #n=set(n)
+    print(n)
+    n=n[::-1]
+    print(n)
+    list_1=[]
+    for i in n:
+        if i not in list_1:
+            list_1.append(i)
+    list_1=list_1[::-1]        
+    print(list_1)        
+    #n=list(n)
+    #n=map(int,n)
+    #n=list(n)
+    #print(n)
+    Count=0
+    for i in range(len(list_1)):
+        if list_1[len(list_1)-(i+1)]==str(i):
+            Count+=1
+            
+    return Count
+result=func(n)
+print(result)
+            
+
